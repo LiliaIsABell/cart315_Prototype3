@@ -18,27 +18,27 @@ public class Player2Move : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.D)){
+        if (Input.GetKey(KeyCode.S)){
 
             this.gameObject.GetComponent<Transform>().Translate(Vector3.left * speed * Time.deltaTime);
             
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.W))
         {
 
             this.gameObject.GetComponent<Transform>().Translate(Vector3.right * speed * Time.deltaTime);
 
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.A))
         {
 
             this.gameObject.GetComponent<Transform>().Translate(Vector3.forward * speed * Time.deltaTime);
 
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.D))
         {
 
             this.gameObject.GetComponent<Transform>().Translate(Vector3.back * speed * Time.deltaTime);

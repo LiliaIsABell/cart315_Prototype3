@@ -18,28 +18,28 @@ public class Player1Move : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
 
             this.gameObject.GetComponent<Transform>().Translate(Vector3.left * speed * Time.deltaTime);
 
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
 
             this.gameObject.GetComponent<Transform>().Translate(Vector3.right * speed * Time.deltaTime);
 
         }
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
 
             this.gameObject.GetComponent<Transform>().Translate(Vector3.forward * speed * Time.deltaTime);
 
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
 
             this.gameObject.GetComponent<Transform>().Translate(Vector3.back * speed * Time.deltaTime);

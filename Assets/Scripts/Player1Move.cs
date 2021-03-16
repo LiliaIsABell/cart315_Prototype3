@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 // Code from Fadrik on Youtube
 //https://www.youtube.com/watch?v=UKqFvXaTuvQ
+//
+// Punching code from Charles Rabbat, Prototype 2
 
 
 public class Player1Move : MonoBehaviour
@@ -13,14 +15,6 @@ public class Player1Move : MonoBehaviour
     public CharacterController controller;
 
     public float speed = 12f;
-
-    //Punching variables
-    //
-    //public string punchtag;
-
-    public Text pointsdisplay;
-
-    int score = 0;
 
     public GameObject fist;
     public GameObject target;
@@ -67,18 +61,8 @@ public class Player1Move : MonoBehaviour
         }
 
         //Punching code
-        //
-        float distance = (fist.transform.position - target.transform.position).magnitude;
 
-
-        if (distance <= 0.7)
-        {
-            score += 1;
-            pointsdisplay.text = "Points: " + score;
-
-        }
-
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKey(KeyCode.J))
         {
             StartCoroutine(Attack(0.15f, 3f, fist.transform.right));
         }
@@ -100,13 +84,4 @@ public class Player1Move : MonoBehaviour
         punching = false;
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.collider.gameObject.CompareTag(punchtag))
-    //    {
-
-    //        SceneManager.LoadScene(0);
-
-    //    }
-    //}
 }

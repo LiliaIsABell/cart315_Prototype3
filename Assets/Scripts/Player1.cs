@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 // Punching code from Charles Rabbat, Prototype 2
 
 
-public class Player1Move : MonoBehaviour
+public class Player1 : MonoBehaviour
 {
     public CharacterController controller;
 
@@ -21,10 +21,6 @@ public class Player1Move : MonoBehaviour
 
     // From Charles code
     public bool punching = false;
-
-
-
-  
 
 
     // Update is called once per frame
@@ -61,6 +57,7 @@ public class Player1Move : MonoBehaviour
         }
 
         //Punching code
+        //
 
         if (Input.GetKey(KeyCode.J))
         {

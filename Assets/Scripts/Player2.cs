@@ -4,9 +4,9 @@ using UnityEngine;
 
 // Code from Fadrik on Youtube
 //https://www.youtube.com/watch?v=UKqFvXaTuvQ
+// Punching code from Charles Rabbat, Prototype 2
 
-
-public class Player2Move : MonoBehaviour
+public class Player2 : MonoBehaviour
 {
     public CharacterController controller;
 
@@ -17,11 +17,6 @@ public class Player2Move : MonoBehaviour
 
     // From Charles code
     public bool punching = false;
-
-
-
-
-
 
 
     // Update is called once per frame
@@ -56,7 +51,7 @@ public class Player2Move : MonoBehaviour
         }
 
         //Punching code
-
+        //
         if (Input.GetKey(KeyCode.F))
         {
             StartCoroutine(Attack(0.15f, 3f, Vector3.left));

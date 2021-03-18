@@ -20,9 +20,10 @@ public class Player2 : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
+        //Movement Code
+        //
         if (Input.GetKey(KeyCode.S)){
 
             this.gameObject.GetComponent<Transform>().Translate(Vector3.left * speed * Time.deltaTime);
@@ -56,6 +57,8 @@ public class Player2 : MonoBehaviour
         {
             StartCoroutine(Attack(0.15f, 3f, Vector3.left));
         }
+
+        
     }
     IEnumerator Attack(float time, float distance, Vector3 direction)
 

@@ -24,7 +24,7 @@ public class Player1 : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Movement code
         //
@@ -63,6 +63,7 @@ public class Player1 : MonoBehaviour
         {
             StartCoroutine(Attack(0.15f, 3f, fist.transform.right));
         }
+
     }
 
     IEnumerator Attack(float time, float distance, Vector3 direction)

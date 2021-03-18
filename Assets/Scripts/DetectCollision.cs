@@ -15,8 +15,10 @@ public class DetectCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider Object)
     {
+    
         if (Object.gameObject == fist)
         {
+            
             SceneManager.LoadScene(scene);
         }
 

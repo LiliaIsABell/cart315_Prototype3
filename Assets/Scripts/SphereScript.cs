@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SphereScript : MonoBehaviour
 
@@ -11,7 +12,7 @@ public class SphereScript : MonoBehaviour
     public GameObject collisionObject;
 
     public Text pointsdisplay;
-    int score = 0;
+    public int score = 0;
 
 
     private void OnTriggerEnter(Collider Object)
@@ -22,4 +23,5 @@ public class SphereScript : MonoBehaviour
             pointsdisplay.text = "Points: " + score;
         }
     }
+
 }

@@ -12,9 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/GameOver1.unity
+    path: Assets/Scenes/GameOver/BlueWin_HIT.unity
     guid: 22f34f0b848b044339e333d9053331a2
   - enabled: 1
-    path: Assets/Scenes/GameOver2.unity
+    path: Assets/Scenes/GameOver/RedWin_HIT.unity
     guid: 8339baf144c034e00a086a2b64e1d178
+  - enabled: 1
+    path: Assets/Scenes/GameOver/BlueWin_Points.unity
+    guid: 09e0eb7076af84c34aa73aeb134b265f
+  - enabled: 1
+    path: Assets/Scenes/GameOver/RedWin_Points.unity
+    guid: 343425bad11f74306b48af38c0bb08bc
   m_configObjects: {}
